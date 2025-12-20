@@ -95,7 +95,7 @@
 }
 .searchBtn .btn-primary:hover {
     background-color: darkgray; 
-    border: red;
+    border: black;
 }
 
 .searchBtn .form-control {
@@ -121,4 +121,21 @@
 
 .carousel-inner .btn:hover {
   color: grey;
+}
+
+.cards {
+    padding-top: 5px;
+    background-color: black;
+}
+
+.cards .btn {
+    background-color: transparent;
+    color: black;
+    border-color: black;
+}
+
+.cards .btn:hover {
+    background-color: grey;
+    border-color: black;
+    
 }
