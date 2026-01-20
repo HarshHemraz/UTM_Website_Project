@@ -1,141 +1,138 @@
-#myCarousel {
-    position: relative;
-    display:flex;
-    flex-wrap: nowrap;
-    object-fit: cover;
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;;
+}
+
+/* Carousel full screen */
+#myCarousel,
+#myCarousel .carousel-inner,
+#myCarousel .item {
+    height: 100vh;
+}
+
+/* Images fill screen properly */
+#myCarousel .item img {
     width: 100%;
     height: 100vh;
-    top: 0;
-    left:0;
+    object-fit: cover;
 }
 
-.carousel-indicators {
-    z-index: 10;
+/* Remove container padding */
+.container-fluid {
+    padding: 0;
 }
 
-#homebtn {
-    top:25px;
-    background-color: rgba(0,0,0,0); 
-    position: absolute;    
-    z-index: 10;
-    transform: translateX(20%); 
-    left: 100px;
-    width:auto;
-}
+/* TEXT OVER IMAGE */
+.desc {
+    padding-top: 75px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
 
-#homebtn .nav-link:hover {
-    color: darkgray;             
-}
-
-#homebtn .nav-link {
-    color:white;
-    background-color: transparent;
-    font-size: 18px;
+    color: white;
+    font-size: 6vw;
     font-weight: bold;
-    padding: 15px 40px;
-    margin: 8px;
-    font-family: "Lucida Console", monospace;
+    letter-spacing: 6px;
+    text-transform: uppercase;
+    
+}
+.carousel-indicators {
+ position: absolute;
+    align-content: center;
+    left: 5%;
+
+}
+
+.btn1 {
+    padding-top: 75px;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+    color: white;
+    background-color: transparent;
+    border: none;
+    font-size: 14px;
+}
+.cards {
+  margin-top:-10px;
+  background-color: black;
+}
+.col-md-6{
+  margin-top: 20px;
+  border:none;
+}
+.navbar-brand {
+    position: relative;
+    bottom: 23px;
+    
+}
+.btnSearch {
+        background-color: transparent;
+        color:white;
+        border: none;
+    }
+
+.btnSearch:hover {
+    color:grey;
+    text-decoration: underline;
+
+}
+.navbar {
+    position: absolute;
+    z-index: 10;
+    font-size: 14px; 
+    width: 100%; 
+    font-weight: bold;
+}
+
+.nav-link {
+    color:white;
+    margin: 0 20px;
+}
+
+/* Mobile text size */
+@media (max-width: 1200px) {
+    .desc {
+        font-size: 10vw;
+        letter-spacing: 3px;
+    }
+    .navbar-brand {
+    margin: 0 auto;
+    display: block;
+}
+   .navbar-search {
+        display: flex !important;
+        padding-left: 70px;
+        width: 70%;
+        text-align: center;
+        padding-left: 250px;
+    }
+    /* Make collapsed navbar items stack vertically */
+    .navbar-collapse {
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 10px 0;
+    }
+    
+}
+.card {
+    background-color: black;
     text-align: center;
 }
-#logo {
-    position: absolute;      
-    top: -30px;                
-    left: 20px;             
-    height: 195px;             
-    width: auto;
-    z-index: 10;
-}
-.carName {
-    position: absolute;
-    background-color: transparent;
-    color: white;
-    font-size: 40px;
-    font-family: "Lucida Console", monospace;
-    transform: translateX(-50%);
-    left: 50%;
-    margin-top: 35%;
-    font-weight: bold;
-    white-space: nowrap;
-    overflow: hidden;
-    border-right: 3px solid white; /* cursor */
-    animation: typing 5s steps(40), cursor .3s step-end infinite alternate;
-    
-}
 
-@keyframes cursor {
-    50% { border-color: transparent;}
-}
-
-@keyframes typing {
-  from { max-width: 0; }
-  to { max-width: 100%; }
-}
-
-.container.mt-3 {
-  clear: both;  /* ensures it starts below any floated/positioned elements */
-  position: relative;
-  z-index: 1;   /* ensures it’s above any negative z-index elements */
-}
-
-
-#card1 {
-    position: relative;
-
-}
-
-.searchBtn {
-    padding-top: 17px;
-    padding-left: 100px;
-    height: 10%;
-}
-
-.searchBtn .btn-primary {
-    background-color: transparent;
-    border-color: white;          
-}
-.searchBtn .btn-primary:hover {
-    background-color: darkgray; 
-    border: black;
-}
-
-.searchBtn .form-control {
-    background-color: transparent;
-    color:white;
-}
-
-.carousel-inner .btn {
-  position: absolute;
-  top: 70%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color:transparent;
-  padding: 16px px;
-  border: none;
-  cursor: pointer;
-  border-radius: 5px;
-  text-align: center;
-  z-index: 10;
-  font-family: "Lucida Console", monospace;
-  color:white;
-}
-
-.carousel-inner .btn:hover {
-  color: grey;
-}
-
-.cards {
-    padding-top: 5px;
-    background-color: black;
-}
-
-.cards .btn {
-    background-color: transparent;
-    color: black;
-    border-color: black;
-}
-
-.cards .btn:hover {
-    background-color: grey;
-    border-color: black;
-    
+.card-title {
+    color:black;
 }
