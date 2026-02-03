@@ -5,8 +5,8 @@ body {
     background-color: black;
     color:white;
     padding-bottom: 250px;
-}
 
+}
 .navbar-brand {
     position: relative;
     bottom: 23px;
@@ -34,7 +34,6 @@ body {
     font-size: 14px; 
     width: 100%; 
     font-weight: bold;
-
 }
 
 .nav-link {
@@ -42,14 +41,14 @@ body {
     margin: 0 20px;
 }
 
-@media (max-width: 768px) {
-    .desc {
-        font-size: 10vw;
-        letter-spacing: 3px;
-    }
+
+
+@media (max-width: 989px) {
+    
     .navbar-brand {
     margin: 0 auto;
     display: block;
+    left:10px;
 }
    .navbar-search {
         display: flex !important;
@@ -73,12 +72,4 @@ body {
     .navbar-nav .nav-item {
         margin: 10px 0;
     }
-    .tablek {
-    border-collapse: collapse;
-    }
-    .section3 {
-    padding-top:20px;
-    height: auto;
-    font-size: 14px;
-}
 }

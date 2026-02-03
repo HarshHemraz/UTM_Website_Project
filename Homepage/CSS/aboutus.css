@@ -7,8 +7,9 @@ body {
     padding-bottom: 250px;
 
 }
-.navbar-brand img {
-    margin-left: 10px;
+.navbar-brand {
+    position: relative;
+    bottom: 23px;
     
 }
 .btnSearch {
@@ -18,6 +19,7 @@ body {
 }
 .navbar-search {
     width:25%;
+    padding-right: 60px;
 
 }
 
@@ -26,7 +28,6 @@ body {
     text-decoration: underline;
 
 }
-
 .navbar {
     position: absolute;
     z-index: 10;
@@ -39,6 +40,7 @@ body {
     color:white;
     margin: 0 20px;
 }
+
 @media (max-width: 768px) {
     .desc {
         font-size: 10vw;

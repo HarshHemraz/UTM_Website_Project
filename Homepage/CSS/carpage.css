@@ -19,8 +19,29 @@ body {
 }
 .navbar-search {
     width:25%;
+    padding-right: 60px;
 
 }
+
+.btnSearch:hover {
+    color:grey;
+    text-decoration: underline;
+
+}
+.navbar {
+    position: absolute;
+    z-index: 10;
+    font-size: 14px; 
+    width: 100%; 
+    font-weight: bold;
+    top: -0.2px;
+}
+
+.nav-link {
+    color:white;
+    margin: 0 20px;
+}
+
 .brandDesc {
     margin-bottom: -20px;
     padding-bottom: 5%;
@@ -74,18 +95,14 @@ body {
     text-decoration: underline;
 
 }
-.navbar {
-    position: absolute;
-    z-index: 10;
-    font-size: 14px; 
-    width: 100%; 
-    font-weight: bold;
-}
 
-.nav-link {
-    color:white;
-    margin: 0 20px;
+.ad-container {
+    width: 70%;
+    height: 100px;
+    
+    
 }
+ 
 
 @media (max-width: 768px) {
     .desc {
