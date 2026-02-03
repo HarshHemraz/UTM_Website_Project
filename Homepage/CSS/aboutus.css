@@ -3,10 +3,12 @@ body {
     margin: 0;
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;;
     background-color: black;
+    color:white;
+    padding-bottom: 250px;
+
 }
-.navbar-brand {
-    position: relative;
-    bottom: 23px;
+.navbar-brand img {
+    margin-left: 10px;
     
 }
 .btnSearch {
@@ -24,6 +26,7 @@ body {
     text-decoration: underline;
 
 }
+
 .navbar {
     position: absolute;
     z-index: 10;
