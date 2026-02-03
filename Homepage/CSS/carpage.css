@@ -4,7 +4,7 @@ body {
     font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;;
     background-color: black;
     color:white;
-    padding-bottom: 250px;
+    padding-bottom: 270px;
 
 }
 .navbar-brand {
@@ -22,11 +22,13 @@ body {
 
 }
 .brandDesc {
-    padding-bottom: 20%;
+    margin-bottom: -20px;
+    padding-bottom: 5%;
     padding-top: 10px;
     text-align: center;
     font-size: 20px;
 }
+
 .table1 {
     text-align: center;
     background-color: transparent;
@@ -35,6 +37,7 @@ body {
 .table-btn {
     background-color: transparent;
     font-size: 20px;
+    border: none;
     color:white;
     display: block;
     padding-top: 25px;
@@ -43,6 +46,13 @@ body {
 .table-btn:hover {
     color: gray;
     text-decoration: none;
+}
+.ad-container {
+    max-width: 970px; 
+    border: 2px dashed red;       
+    background-color: #f9f9f9;   
+    padding: 20px;                
+    max-width: 970px;             
 }
 .card {
     background-color: gray;
