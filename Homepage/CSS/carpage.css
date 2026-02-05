@@ -34,7 +34,7 @@ body {
     font-size: 14px; 
     width: 100%; 
     font-weight: bold;
-    top: -0.2px;
+    
 }
 
 .nav-link {
@@ -50,10 +50,45 @@ body {
     font-size: 20px;
 }
 
-.table1 {
-    text-align: center;
-    background-color: transparent;
+.trhead {
+    font-size: 40px; 
+        white-space: nowrap; 
+        display: block;
+        width: 100%;
+        padding-bottom: 20px;
+   
     
+}
+.td1 {
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+.td2 {
+    font-size: 20px;
+    padding: 10px;
+}
+.table1 {
+    padding-top: 10px;
+    border-top:2px solid white;
+    border-bottom: 2px solid white;
+    width: 100%;   
+    margin-top: 100px; 
+    margin-bottom: 50px;
+
+}
+.table1 th,
+.table1 td {
+    border: none;
+    padding: 12px 40px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    
+}
+.table1 th {
+    font-size: 24px;
+    padding-bottom: 20px;
 }
 .table-btn {
     background-color: transparent;

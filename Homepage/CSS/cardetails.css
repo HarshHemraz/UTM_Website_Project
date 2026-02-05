@@ -1,0 +1,287 @@
+body {
+    height: 100%;
+    margin: 0;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: black;
+    color: white;
+    padding-bottom: 270px;
+    
+}
+
+.navbar-brand {
+    position: relative;
+    display: block;
+    bottom: 20px;
+    padding-bottom: 15px;  
+    font-size: 20px;
+}
+
+.btnSearch {
+    background-color: transparent;
+    color: white;
+    border: none;
+}
+
+.navbar-search {
+    width: 25%;
+    padding-right: 60px;
+}
+
+.btnSearch:hover {
+    color: grey;
+    text-decoration: underline;
+}
+
+.navbar {
+    position: absolute;
+    z-index: 10;
+    font-size: 18px; 
+    width: 100%; 
+    font-weight: bold;
+    padding-top: 15px; 
+    padding-left: 30px;
+    
+}
+.nav-item {
+    margin: 0 10px;
+}
+
+.nav-link {
+    color: white;
+    margin: 0 20px;
+}
+
+
+.photos {
+    padding: 50px 0;
+}
+
+.photo-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 150px; 
+    min-height: 500px;
+}
+
+.section-1 {
+    flex-direction: row;
+}
+
+.section-1 .photo1 {
+    width: 45%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.section-1 .carDesc {
+    width: 50%;
+    padding-left: 50px;
+}
+
+.section-2 {
+    flex-direction: row-reverse;
+}
+
+.section-2 .photo2 {
+    padding-top: 100px;
+    width: 50%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.section-2 .carDesc {
+    width: 50%;
+    padding-right: 50px;
+    text-align: right;
+
+}
+
+
+.carDesc {
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.carDesc b {
+    font-size: 24px;
+    color: #e6e6e6;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.container {
+    padding-top: 10vh;
+}
+
+.section-3 {
+    flex-direction: row;
+}
+.section-3 .photo3 {
+    width: 45%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+.section-3 .carDesc {
+    width: 50%;
+    padding-left: 50px;
+}
+
+.trhead {
+    font-size: 40px; 
+        white-space: nowrap; 
+        display: block;
+        width: 100%;
+        padding-bottom: 20px;
+     
+}
+.tableTechnicalDetails {
+    margin-bottom: 150px;
+}
+.td1 {
+    font-size: 25px;
+    font-weight: bold;
+    
+}
+.td2 {
+    font-size: 20px;
+    padding: 10px;
+}
+.table1 {
+    padding-top: 10px;
+    border-top:2px solid white;
+    border-bottom: 2px solid white;
+    width: 100%;   
+    margin-top: 300px; 
+    margin-bottom: 100px;
+
+}
+.table1 th,
+.table1 td {
+    border: none;
+    padding: 12px 40px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    
+}
+.table1 th {
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+.table-btn {
+    background-color: transparent;
+    font-size: 20px;
+    border: none;
+    color:white;
+    display: block;
+    padding-top: 25px;
+    text-decoration: none;
+}
+.table-btn:hover {
+    color: gray;
+    text-decoration: none;
+}
+
+
+
+/* ===== MOBILE RESPONSIVE STYLES ===== */
+@media (max-width: 768px) {
+    /* Navbar Mobile Fixes */
+    .navbar-brand {
+        margin: 0 auto;
+        display: block;
+    }
+    
+    .navbar-search {
+        display: flex !important;
+        width: 100%;
+        text-align: center;
+        padding: 0 20px;
+    }
+    
+    .navbar-collapse {
+        flex-direction: column !important;
+        text-align: center;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .navbar-nav .nav-item {
+        margin: 10px 0;
+    }
+    .table1 {
+    
+    margin-top: 100px; 
+    margin-bottom: 100px;
+
+    }
+    /* Photo Sections Mobile Layout */
+    .photo-section {
+        flex-direction: column !important; /* Stack everything vertically */
+        margin-bottom: 80px;
+        min-height: auto;
+        padding: 0 20px;
+    }
+    
+    .section-1, .section-2,.section-3 {
+        flex-direction: column;
+    }
+    
+    /* Make both images full width on mobile */
+    .photo1, .photo2,.photo3 {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto 40px auto;
+        padding: 0 !important;
+    }
+    
+    /* Make both text sections full width on mobile */
+    .section-1 .carDesc,
+    .section-2 .carDesc,
+    .section-3 .carDesc {
+        width: 100% !important;
+        padding: 0 !important;
+        text-align: center !important;
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+    
+    .carDesc b {
+        font-size: 20px;
+        text-align: center;
+    }
+    .photos {
+        padding: 30px 0;
+    }
+
+    .tableTechnicalDetails {
+        display: block;
+        border:none;
+       
+    }
+     .td1, .td2 {
+        font-size: 18px;
+        display: block;
+        width: 100% !important;
+        padding: 0;
+        border: none;
+        text-align: center;
+        padding: 25px 20px;
+        
+    }
+    .td1 {
+        text-decoration: underline;
+    }
+
+  
+}
+
+
