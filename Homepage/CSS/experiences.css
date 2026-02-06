@@ -17,6 +17,13 @@ body {
     color:white;
     border: none;
 }
+.h2Expeirence {
+    font-size: 25px;
+    text-align: center;
+    padding-top: 100px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
 .navbar-search {
     width:25%;
     padding-right: 60px;
@@ -31,7 +38,6 @@ body {
 .navbar {
     position: absolute;
     z-index: 10;
-    font-size: 14px; 
     width: 100%; 
     font-weight: bold;
 }
@@ -39,7 +45,123 @@ body {
 .nav-link {
     color:white;
     margin: 0 20px;
+    font-size: 14px;
 }
+
+.photo-section {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 150px; 
+    min-height: 500px;
+}
+
+.section-1 {
+    flex-direction: row;
+}
+
+.section-1 .photo1 {
+    width: 45%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.section-1 .carDesc {
+    width: 50%;
+    padding-left: 50px;
+}
+
+.section-2 {
+    flex-direction: row-reverse;
+}
+
+.section-2 .photo2 {
+    padding-top: 30px;
+    width: 50%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+}
+
+.section-2 .carDesc {
+    width: 50%;
+    padding-right: 50px;
+    text-align: right;
+
+}
+
+
+.carDesc {
+    font-size: 20px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.carDesc b {
+    font-size: 24px;
+    color: #e6e6e6;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.carousel {
+    margin-top: -200px;
+    padding-bottom: 100px;
+}
+.carousel-indicators {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  margin: 0;
+  padding: 0;
+}
+.carousel-item:hover img {
+  transition: transform 0.5s ease;
+  transform: scale(1.05);
+}
+
+.carousel-caption {
+    font-size: 20px;
+    
+}
+
+.table1 {
+    padding-top: 10px;
+    border-top:2px solid white;
+    border-bottom: 2px solid white;
+    width: 100%;   
+    margin-top: 300px; 
+    margin-bottom: 100px;
+
+}
+.table1 th,
+.table1 td {
+    border: none;
+    padding: 12px 40px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    
+}
+.table1 th {
+    font-size: 24px;
+    padding-bottom: 20px;
+}
+.table-btn {
+    background-color: transparent;
+    font-size: 20px;
+    border: none;
+    color:white;
+    display: block;
+    padding-top: 25px;
+    text-decoration: none;
+}
+.table-btn:hover {
+    color: gray;
+    text-decoration: none;
+}
+
 
 @media (max-width: 768px) {
     .desc {
@@ -49,6 +171,11 @@ body {
     .navbar-brand {
     margin: 0 auto;
     display: block;
+}
+.carousel {
+    margin-top: -150px;
+    padding-bottom: 50px;
+    margin-bottom: 60px;
 }
    .navbar-search {
         display: flex !important;
@@ -80,4 +207,53 @@ body {
     height: auto;
     font-size: 14px;
 }
+ .photo-section {
+        flex-direction: column !important; /* Stack everything vertically */
+        margin-bottom: 80px;
+        min-height: auto;
+        padding: 0 20px;
+    }
+    
+    .section-1, .section-2,.section-3 {
+        flex-direction: column;
+    }
+    
+    /* Make both images full width on mobile */
+    .photo1, .photo2,.photo3 {
+        width: 100% !important;
+        max-width: 100% !important;
+        margin: 0 auto 40px auto;
+        padding: 0 !important;
+    }
+    
+    /* Make both text sections full width on mobile */
+    .section-1 .carDesc,
+    .section-2 .carDesc,
+    .section-3 .carDesc {
+        width: 100% !important;
+        padding: 0 !important;
+        text-align: center !important;
+        font-size: 16px;
+        margin-bottom: 50px;
+    }
+    .table1 {
+    
+    margin-top: 100px; 
+    margin-bottom: 100px;
+   
+
+    }
+    
+    .carDesc b {
+        font-size: 20px;
+        text-align: center;
+    }
+    .photos {
+        padding: 30px 0;
+    }
+
+    .h2Expeirence{
+        padding-top: 50px;
+        font-size: 18px;
+    }
 }

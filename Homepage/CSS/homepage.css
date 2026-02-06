@@ -113,13 +113,17 @@ body {
     height: 60vh;
     width: 100%;
     background-color: black;
-    font-size: 25px;
+    font-size: 30px;
     display: flex;
     justify-content: center; 
     align-items: center;   
     
 }
 
+.btnk {
+    font-size: 20px;
+    padding: 20px;
+}
 
 .tablek {
     border: none;
@@ -130,6 +134,7 @@ body {
     border-collapse: separate;
     border-spacing: 15vh 1vh;
 }
+
 .tablek .btn {
     color:wheat;
 }
@@ -234,9 +239,9 @@ body {
     border-collapse: collapse;
     }
     .section3 {
-    padding-top:20px;
+    padding-top:100px;
     height: auto;
-    font-size: 14px;
+    font-size:14px;
 }
 .titleStory {
     position: absolute;   

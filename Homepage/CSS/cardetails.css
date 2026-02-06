@@ -16,6 +16,7 @@ body {
     font-size: 20px;
 }
 
+
 .btnSearch {
     background-color: transparent;
     color: white;
@@ -47,13 +48,15 @@ body {
 }
 
 .nav-link {
-    color: white;
+    color:white;
     margin: 0 20px;
+    font-size: 14px;
 }
 
 
 .photos {
     padding: 50px 0;
+    
 }
 
 .photo-section {
@@ -73,6 +76,7 @@ body {
     max-width: 600px;
     height: auto;
     border-radius: 10px;
+    
 }
 
 .section-1 .carDesc {
@@ -186,12 +190,21 @@ body {
     color: gray;
     text-decoration: none;
 }
+.titleCars {
+    text-align: center;
+    font-weight: bold;
+}
 
 
 
 /* ===== MOBILE RESPONSIVE STYLES ===== */
 @media (max-width: 768px) {
     /* Navbar Mobile Fixes */
+    .titleCars {
+    padding-bottom: 100px;
+
+}
+
     .navbar-brand {
         margin: 0 auto;
         display: block;
@@ -221,6 +234,7 @@ body {
     
     margin-top: 100px; 
     margin-bottom: 100px;
+   
 
     }
     /* Photo Sections Mobile Layout */
@@ -261,10 +275,15 @@ body {
     .photos {
         padding: 30px 0;
     }
+    .trhead {
+        font-size: 25px;
+        text-align: center;
+    }
 
     .tableTechnicalDetails {
         display: block;
         border:none;
+        padding-right: -100px;
        
     }
      .td1, .td2 {
