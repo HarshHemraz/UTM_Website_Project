@@ -238,6 +238,7 @@ body {
     .tablek {
     border-collapse: collapse;
     }
+    
     .section3 {
     padding-top:100px;
     height: auto;
@@ -264,12 +265,19 @@ body {
     font-size: 14px;
     max-width: 90%;
 }
-    .tablek th,
-.tablek td {
-    padding: 15px;
-    color: white;
-    text-align: center;
+.section3 {
+    font-size: 20px;
+    padding-top: 200px;
+    width: 100%;
+     text-align: center;
+
 }
+  .btnk {
+        padding: 25px 15px;
+        font-size: 14px;
+        min-width: 120px; /* Smaller minimum width */
+       
+    }
 
     
 }
